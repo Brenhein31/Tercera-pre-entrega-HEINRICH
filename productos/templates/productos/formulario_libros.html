@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
+{% block titulo %}
+Libros - añadir
+{% endblock titulo %}
+
 {% block contenido %}
+<h3>Añadir un producto:</h3>
+<br>
 <form method="post">
  {% csrf_token %}
  {{ formulario1.as_p }}

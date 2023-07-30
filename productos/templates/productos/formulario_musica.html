@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
+{% block titulo %}
+Música - añadir
+{% endblock titulo %}
+
 {% block contenido %}
+<h3>Añadir un producto:</h3>
+<br>
 <form method="post">
  {% csrf_token %}
  {{ formulario2.as_p }}

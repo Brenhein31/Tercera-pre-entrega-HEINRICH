@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
+{% block titulo %}
+Enviar consulta
+{% endblock titulo %}
+
 {% block contenido %}
+<h3>Realizar una consulta:</h3>
+<br>
 <form method="post">
  {% csrf_token %}
  {{ formulario3.as_p }}

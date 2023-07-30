@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
+{% block titulo %}
+Clientes - añadir
+{% endblock titulo %}
+
 {% block contenido %}
+<h3>Añadir un cliente:</h3>
+<br>
 <form method="post">
  {% csrf_token %}
  {{ formulario4.as_p }}
